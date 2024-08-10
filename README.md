@@ -10,7 +10,7 @@
 
 - 🌱 I’m currently learning **B.Tech CSE (Cyber Security)**
 
-- 🤝 I’m looking for help with **Java**
+- 🤝 I’m looking for help with **project**
 
 - 📫 How to reach me **surya7978252@gmail.com**
 
