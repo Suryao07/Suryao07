@@ -17,7 +17,7 @@
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-suryao07-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/suryao07)
 [![GitHub](https://img.shields.io/badge/GitHub-Suryao07-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Suryao07)
 [![Twitter](https://img.shields.io/badge/Twitter-suryapratap__o07-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/suryapratap_o07)
-[![Email](https://img.shields.io/badge/Email-surya7978252@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:surya7978252@gmail.com)
+[![Email](https://img.shields.io/badge/Email-surya7978252@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suryapratap.contact@gmail.com)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=suryao07&style=flat-square&color=4F8EF7&label=PROFILE+VIEWS)
 [![GitHub followers](https://img.shields.io/github/followers/suryao07?style=flat-square&color=4F8EF7&label=Followers)](https://github.com/Suryao07)
