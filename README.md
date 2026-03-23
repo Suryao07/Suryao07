@@ -114,9 +114,23 @@
 
 <div align="center">
 
-[![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/suryao07.png)](https://tryhackme.com/p/suryao07)
+[![TryHackMe](https://img.shields.io/badge/TryHackMe-suryao07-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/suryao07)
 
-> **Rank:** `[0x7][ADEPT]` &nbsp;|&nbsp; **Global:** Top 15% &nbsp;|&nbsp; **Streak:** 🔥 30 days &nbsp;|&nbsp; **Rooms:** 44 &nbsp;|&nbsp; **Badges:** 9
+<br/>
+
+| 🏅 Rank | 🌍 Global | 🔥 Streak | 🚪 Rooms | 🏆 Badges |
+|:---:|:---:|:---:|:---:|:---:|
+| `[0x7] ADEPT` | **Top 15%** | **30 days** | **44** | **9** |
+
+<br/>
+
+![Rank](https://img.shields.io/badge/Rank-0x7%20ADEPT-212C42?style=flat-square&logo=tryhackme&logoColor=white)
+![Global](https://img.shields.io/badge/Global-Top%2015%25-gold?style=flat-square&logo=tryhackme&logoColor=white)
+![Streak](https://img.shields.io/badge/Streak-30%20Days%20🔥-FF6B35?style=flat-square)
+![Rooms](https://img.shields.io/badge/Rooms%20Completed-44-4F8EF7?style=flat-square)
+![Badges](https://img.shields.io/badge/Badges-9-9B59B6?style=flat-square)
+
+> 🔗 **[View Full Profile → tryhackme.com/p/suryao07](https://tryhackme.com/p/suryao07)**
 
 </div>
 
