@@ -68,7 +68,7 @@
 </td>
 <td align="center" width="200">
 <img src="https://img.icons8.com/emoji/48/000000/fire.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">30</b><br/>
+<b style="font-size:28px; color:#4F8EF7">37</b><br/>
 <sub>Day Streak</sub>
 </td>
 <td align="center" width="200">
@@ -118,7 +118,7 @@
 
 <br/>
 
-> **Rank:** `[0x7][ADEPT]` &nbsp;|&nbsp; **Global:** Top 15% &nbsp;|&nbsp; **Streak:** 🔥 30 days &nbsp;|&nbsp; **Rooms:** 44 &nbsp;|&nbsp; **Badges:** 9
+> **Rank:** `[0x7][ADEPT]` &nbsp;|&nbsp; **Global:** Top 15% &nbsp;|&nbsp; **Streak:** 🔥 37 days &nbsp;|&nbsp; **Rooms:** 44 &nbsp;|&nbsp; **Badges:** 9
 
 </div>
 
