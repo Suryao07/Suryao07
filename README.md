@@ -28,7 +28,7 @@
 
 ## 〔 $ cat /etc/surya/profile 〕
 
-<img align="right" src="https://raw.githubusercontent.com/Suryao07/Suryao07/main/edited.jpeg" width="200" style="border-radius:12px; margin-left:20px;" alt="Surya Pratap Singh"/>
+<img align="right" src="https://raw.githubusercontent.com/Suryao07/Suryao07/main/edited.jpg" width="200" style="border-radius:12px; margin-left:20px;" alt="Surya Pratap Singh"/>
 
 ```bash
 ╔══════════════════════════════════════════════════════════╗
