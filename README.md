@@ -63,29 +63,29 @@
 <tr>
 <td align="center" width="200">
 <img src="https://img.icons8.com/color/48/000000/trophy.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">Top 15%</b><br/>
+<b style="font-size:28px; color:#4F8EF7">Top 5%</b><br/>
 <sub>TryHackMe Global Rank</sub>
 </td>
 <td align="center" width="200">
 <img src="https://img.icons8.com/emoji/48/000000/fire.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">37</b><br/>
+<b style="font-size:28px; color:#4F8EF7">90</b><br/>
 <sub>Day Streak</sub>
 </td>
 <td align="center" width="200">
 <img src="https://img.icons8.com/color/48/000000/door.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">44</b><br/>
+<b style="font-size:28px; color:#4F8EF7">130</b><br/>
 <sub>Rooms Completed</sub>
 </td>
 <td align="center" width="200">
 <img src="https://img.icons8.com/color/48/000000/medal.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">9</b><br/>
+<b style="font-size:28px; color:#4F8EF7">13</b><br/>
 <sub>THM Badges</sub>
 </td>
 </tr>
 <tr>
 <td align="center">
 <img src="https://img.icons8.com/color/48/000000/flag.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">3+</b><br/>
+<b style="font-size:28px; color:#4F8EF7">4+</b><br/>
 <sub>CTF Competitions</sub>
 </td>
 <td align="center">
