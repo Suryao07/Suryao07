@@ -17,7 +17,7 @@
 [![TryHackMe](https://img.shields.io/badge/TryHackMe-suryao07-212C42?style=for-the-badge&logo=tryhackme&logoColor=white)](https://tryhackme.com/p/suryao07)
 [![GitHub](https://img.shields.io/badge/GitHub-Suryao07-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Suryao07)
 [![Twitter](https://img.shields.io/badge/Twitter-suryapratap__o07-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/suryapratap_o07)
-[![Email](https://img.shields.io/badge/Email-surya7978252@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suryapratap.contact@gmail.com)
+[![Email](https://img.shields.io/badge/Email-suryapratap.contact@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:suryapratap.contact@gmail.com)
 
 ![Profile Views](https://komarev.com/ghpvc/?username=suryao07&style=flat-square&color=4F8EF7&label=PROFILE+VIEWS)
 [![GitHub followers](https://img.shields.io/github/followers/suryao07?style=flat-square&color=4F8EF7&label=Followers)](https://github.com/Suryao07)
@@ -34,7 +34,7 @@
 ╔══════════════════════════════════════════════════════════╗
 ║                                                          ║
 ║   Name     :  Surya Pratap Singh                         ║
-║   Alias     :  suryao07 | 0x7 | ADEPT                   ║
+║   Alias    :  suryao07 | 0x7 | ADEPT                    ║
 ║   Degree   :  B.Tech CSE — Cyber Security                ║
 ║   College  :  Bharath Institute of Higher Education      ║
 ║                                                          ║
@@ -47,9 +47,9 @@
 ║   Tagline  :  "I don't break things. I find              ║
 ║                out how they were already broken."        ║
 ║                                                          ║
-║   Status   :  [■■■■■■■■■■] ONLINE — Seeking Internship  ║
+║   Status   :  [■■■■■■■■■■] ONLINE — Open to Opportunities║
 ╚══════════════════════════════════════════════════════════╝
-```
+````
 
 <br clear="right"/>
 
@@ -59,6 +59,7 @@
 
 <div align="center">
 
+<!-- THM_TABLE_START -->
 <table>
 <tr>
 <td align="center" width="200">
@@ -68,12 +69,12 @@
 </td>
 <td align="center" width="200">
 <img src="https://img.icons8.com/emoji/48/000000/fire.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">130</b><br/>
+<b style="font-size:28px; color:#4F8EF7">137</b><br/>
 <sub>Day Streak</sub>
 </td>
 <td align="center" width="200">
 <img src="https://img.icons8.com/color/48/000000/door.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">90</b><br/>
+<b style="font-size:28px; color:#4F8EF7">89</b><br/>
 <sub>Rooms Completed</sub>
 </td>
 <td align="center" width="200">
@@ -90,7 +91,7 @@
 </td>
 <td align="center">
 <img src="https://img.icons8.com/color/48/000000/certificate.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">4+</b><br/>
+<b style="font-size:28px; color:#4F8EF7">5+</b><br/>
 <sub>Certifications</sub>
 </td>
 <td align="center">
@@ -101,10 +102,11 @@
 <td align="center">
 <img src="https://img.icons8.com/color/48/000000/shield.png" width="40"/><br/>
 <b style="font-size:28px; color:#4F8EF7">CEH</b><br/>
-<sub>Certified</sub>
+<sub>Training</sub>
 </td>
 </tr>
 </table>
+<!-- THM_TABLE_END -->
 
 </div>
 
@@ -118,7 +120,9 @@
 
 <br/>
 
-> **Rank:** `[0x7][ADEPT]` &nbsp;|&nbsp; **Global:** Top 15% &nbsp;|&nbsp; **Streak:** 🔥 37 days &nbsp;|&nbsp; **Rooms:** 44 &nbsp;|&nbsp; **Badges:** 9
+<!-- THM_STATS_START -->
+> **Rank:** `[0x7][ADEPT]`  |  **Global:** Top 5%  |  **Streak:** 🔥 137 days  |  **Rooms:** 89  |  **Badges:** 13
+<!-- THM_STATS_END -->
 
 </div>
 
@@ -145,15 +149,15 @@
 
 <div align="center">
 
-| Category | Tools |
-|:---|:---|
-| 🌐 **Web Testing** | Burp Suite · OWASP ZAP · SQLMap · Nikto |
-| 🔎 **Recon & OSINT** | Nmap · Gobuster · theHarvester · DNSRecon · Whois · Netdiscover · Enum4linux · Dirbuster |
-| 💥 **Exploitation** | Metasploit · Searchsploit |
-| 🔑 **Password Attacks** | Hydra · John the Ripper · Hashcat |
-| 📡 **Network Analysis** | Wireshark · Tcpdump · Netcat |
-| 📶 **Wireless Security** | Aircrack-ng · WiFite · Bettercap |
-| 🐧 **Environment** | Kali Linux · Linux CLI |
+| Category                 | Tools                                                                                    |
+| :----------------------- | :--------------------------------------------------------------------------------------- |
+| 🌐 **Web Testing**       | Burp Suite · OWASP ZAP · SQLMap · Nikto                                                  |
+| 🔎 **Recon & OSINT**     | Nmap · Gobuster · theHarvester · DNSRecon · Whois · Netdiscover · Enum4linux · Dirbuster |
+| 💥 **Exploitation**      | Metasploit · Searchsploit                                                                |
+| 🔑 **Password Attacks**  | Hydra · John the Ripper · Hashcat                                                        |
+| 📡 **Network Analysis**  | Wireshark · Tcpdump · Netcat                                                             |
+| 📶 **Wireless Security** | Aircrack-ng · WiFite · Bettercap                                                         |
+| 🐧 **Environment**       | Kali Linux · Linux CLI                                                                   |
 
 </div>
 
@@ -165,7 +169,6 @@
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
@@ -238,11 +241,11 @@
 ┌─────────────────────────────────────────────────────────────────┐
 │  VERIFIED CREDENTIALS                                            │
 ├──────────────────────────────────┬──────────────────────────────┤
-│  Certified Ethical Hacker (CEH)  │  Internshala · Infoshine     │
-│  Pre Security Certificate        │  TryHackMe                   │
-│  Foundations of Cybersecurity    │  Google · Coursera           │
-│  Advanced Python Diploma         │  Programming & Automation    │
-│  CTF Participation               │  3+ Competitions             │
+│  Web Exploit Hunting & Bug Bounty│  EdSkill Academy             │
+│  CEH Training                    │  Internshala · Scholverse     │
+│  Pre Security Certificate        │  TryHackMe                    │
+│  Foundations of Cybersecurity    │  Google · Coursera            │
+│  Advanced Python Diploma         │  Programming & Automation     │
 └──────────────────────────────────┴──────────────────────────────┘
    ↳ Verify via LinkedIn: linkedin.com/in/surya0x
 ```
@@ -288,7 +291,7 @@ status = {
 }
 
 print("[🟢 ONLINE] Surya is available for opportunities.")
-print(f"Reach out → surya7978252@gmail.com")
+print(f"Reach out → suryapratap.contact@gmail.com")
 ```
 
 ---
@@ -297,15 +300,15 @@ print(f"Reach out → surya7978252@gmail.com")
 
 <div align="center">
 
-| | Platform | Handle |
-|:---:|:---|:---|
-| 🌐 | Portfolio | [surya0x.technoleg.in](https://surya0x.technoleg.in) |
-| 💼 | LinkedIn | [linkedin.com/in/surya0x](https://www.linkedin.com/in/surya0x/) |
-| 🐙 | GitHub | [github.com/Suryao07](https://github.com/Suryao07) |
-| 🎮 | TryHackMe | [tryhackme.com/p/suryao07](https://tryhackme.com/p/suryao07) |
-| 🐦 | Twitter | [@suryapratap_o07](https://twitter.com/suryapratap_o07) |
-| 💬 | Discord | [Surya_o07](https://discord.gg/Surya_o07) |
-| 📧 | Email | [surya7978252@gmail.com](mailto:surya7978252@gmail.com) |
+|     | Platform  | Handle                                                                |
+| :-: | :-------- | :-------------------------------------------------------------------- |
+|  🌐 | Portfolio | [surya0x.technoleg.in](https://surya0x.technoleg.in)                  |
+|  💼 | LinkedIn  | [linkedin.com/in/surya0x](https://www.linkedin.com/in/surya0x/)       |
+|  🐙 | GitHub    | [github.com/Suryao07](https://github.com/Suryao07)                    |
+|  🎮 | TryHackMe | [tryhackme.com/p/suryao07](https://tryhackme.com/p/suryao07)          |
+|  🐦 | Twitter   | [@suryapratap_o07](https://twitter.com/suryapratap_o07)               |
+|  💬 | Discord   | [Surya_o07](https://discord.gg/Surya_o07)                             |
+|  📧 | Email     | [suryapratap.contact@gmail.com](mailto:suryapratap.contact@gmail.com) |
 
 <br/>
 
