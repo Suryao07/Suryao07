@@ -2,7 +2,7 @@ name: Update TryHackMe Stats
 
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch and update TryHackMe stats
+      - name: Update TryHackMe stats
         shell: python
         run: |
           import json
@@ -24,95 +24,84 @@ jobs:
           import urllib.request
           from pathlib import Path
 
-          API_URL = "https://tryhackme.com/api/v2/public-profile?username=suryao07"
-
+          url = "https://tryhackme.com/api/v2/public-profile?username=suryao07"
           request = urllib.request.Request(
-              API_URL,
-              headers={"User-Agent": "Mozilla/5.0"},
+              url,
+              headers={"User-Agent": "Mozilla/5.0 GitHub-Actions"}
           )
 
           with urllib.request.urlopen(request, timeout=30) as response:
               payload = json.load(response)
 
           if payload.get("status") != "success":
-              raise RuntimeError("TryHackMe API did not return success")
+              raise RuntimeError("TryHackMe API returned an unsuccessful response")
 
           data = payload["data"]
-
-          top_percentage = data["topPercentage"]
+          top = data["topPercentage"]
           streak = data["streak"]
           rooms = data["completedRoomsNumber"]
           badges = data["badgesNumber"]
 
-          readme_path = Path("README.md")
-          readme = readme_path.read_text(encoding="utf-8")
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
 
-          readme = re.sub(
-              r"Top \d+%(?=\s*</b><br/>\s*<sub>TryHackMe Global Rank</sub>)",
-              f"Top {top_percentage}%",
-              readme,
-          )
+          replacements = [
+              (
+                  r'Top \d+%(?=</b><br/>\s*<sub>TryHackMe Global Rank</sub>)',
+                  f'Top {top}%'
+              ),
+              (
+                  r'\d+(?=</b><br/>\s*<sub>Day Streak</sub>)',
+                  str(streak)
+              ),
+              (
+                  r'\d+(?=</b><br/>\s*<sub>Rooms Completed</sub>)',
+                  str(rooms)
+              ),
+              (
+                  r'\d+(?=</b><br/>\s*<sub>THM Badges</sub>)',
+                  str(badges)
+              ),
+          ]
 
-          readme = re.sub(
-              r"\d+(?=\s*</b><br/>\s*<sub>Day Streak</sub>)",
-              str(streak),
-              readme,
-          )
+          for pattern, replacement in replacements:
+              text, count = re.subn(pattern, replacement, text, count=1)
+              if count != 1:
+                  raise RuntimeError(f"README stat pattern not found: {pattern}")
 
-          readme = re.sub(
-              r"\d+(?=\s*</b><br/>\s*<sub>Rooms Completed</sub>)",
-              str(rooms),
-              readme,
-          )
-
-          readme = re.sub(
-              r"\d+(?=\s*</b><br/>\s*<sub>THM Badges</sub>)",
-              str(badges),
-              readme,
-          )
-
-          stats_pattern = (
-              r'> \*\*Rank:\*\* `\[0x7\]\[ADEPT\]`.*?'
+          profile_pattern = (
+              r'> \*\*Rank:\*\* `\[0x7\]\[ADEPT\]` &nbsp;\|&nbsp; '
+              r'\*\*Global:\*\* Top \d+% &nbsp;\|&nbsp; '
+              r'\*\*Streak:\*\* 🔥 \d+ days &nbsp;\|&nbsp; '
+              r'\*\*Rooms:\*\* \d+ &nbsp;\|&nbsp; '
               r'\*\*Badges:\*\* \d+'
           )
 
-          stats_line = (
+          profile_line = (
               f'> **Rank:** `[0x7][ADEPT]` &nbsp;|&nbsp; '
-              f'**Global:** Top {top_percentage}% &nbsp;|&nbsp; '
+              f'**Global:** Top {top}% &nbsp;|&nbsp; '
               f'**Streak:** 🔥 {streak} days &nbsp;|&nbsp; '
               f'**Rooms:** {rooms} &nbsp;|&nbsp; '
               f'**Badges:** {badges}'
           )
 
-          readme, replacements = re.subn(
-              stats_pattern,
-              stats_line,
-              readme,
-              count=1,
-          )
+          text, count = re.subn(profile_pattern, profile_line, text, count=1)
+          if count != 1:
+              raise RuntimeError("TryHackMe profile stats line was not found")
 
-          if replacements != 1:
-              raise RuntimeError(
-                  "TryHackMe profile stats line was not found in README"
-              )
+          path.write_text(text, encoding="utf-8")
 
-          readme_path.write_text(readme, encoding="utf-8")
+          print(f"Top {top}% | Streak {streak} | Rooms {rooms} | Badges {badges}")
 
-          print(f"Top: {top_percentage}%")
-          print(f"Streak: {streak}")
-          print(f"Rooms: {rooms}")
-          print(f"Badges: {badges}")
-
-      - name: Commit updated stats
+      - name: Commit changes
         run: |
           if git diff --quiet README.md; then
-            echo "TryHackMe stats are already up to date."
+            echo "TryHackMe stats are already current."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add README.md
           git commit -m "chore: update TryHackMe stats"
           git push
