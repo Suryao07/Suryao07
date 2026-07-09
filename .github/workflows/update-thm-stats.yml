@@ -28,7 +28,7 @@ jobs:
 
           request = urllib.request.Request(
               API_URL,
-              headers={"User-Agent": "Mozilla/5.0 GitHub-Actions-THM-Stats"},
+              headers={"User-Agent": "Mozilla/5.0"},
           )
 
           with urllib.request.urlopen(request, timeout=30) as response:
@@ -47,35 +47,33 @@ jobs:
           readme_path = Path("README.md")
           readme = readme_path.read_text(encoding="utf-8")
 
-          table_start = "<!-- THM_TABLE_START -->"
-          table_end = "<!-- THM_TABLE_END -->"
-          stats_start = "<!-- THM_STATS_START -->"
-          stats_end = "<!-- THM_STATS_END -->"
+          readme = re.sub(
+              r"Top \d+%(?=\s*</b><br/>\s*<sub>TryHackMe Global Rank</sub>)",
+              f"Top {top_percentage}%",
+              readme,
+          )
 
-          for marker in (table_start, table_end, stats_start, stats_end):
-              if marker not in readme:
-                  raise RuntimeError(f"README marker not found: {marker}")
+          readme = re.sub(
+              r"\d+(?=\s*</b><br/>\s*<sub>Day Streak</sub>)",
+              str(streak),
+              readme,
+          )
 
-          table_block = readme.split(table_start, 1)[1].split(table_end, 1)[0]
-          table_block = re.sub(
-              r'(<b style="font-size:28px; color:#4F8EF7">)Top \d+%(</b><br/>\s*<sub>TryHackMe Global Rank</sub>)',
-              rf'\g<1>Top {top_percentage}%\2',
-              table_block,
+          readme = re.sub(
+              r"\d+(?=\s*</b><br/>\s*<sub>Rooms Completed</sub>)",
+              str(rooms),
+              readme,
           )
-          table_block = re.sub(
-              r'(<b style="font-size:28px; color:#4F8EF7">)\d+(</b><br/>\s*<sub>Day Streak</sub>)',
-              rf'\g<1>{streak}\2',
-              table_block,
+
+          readme = re.sub(
+              r"\d+(?=\s*</b><br/>\s*<sub>THM Badges</sub>)",
+              str(badges),
+              readme,
           )
-          table_block = re.sub(
-              r'(<b style="font-size:28px; color:#4F8EF7">)\d+(</b><br/>\s*<sub>Rooms Completed</sub>)',
-              rf'\g<1>{rooms}\2',
-              table_block,
-          )
-          table_block = re.sub(
-              r'(<b style="font-size:28px; color:#4F8EF7">)\d+(</b><br/>\s*<sub>THM Badges</sub>)',
-              rf'\g<1>{badges}\2',
-              table_block,
+
+          stats_pattern = (
+              r'> \*\*Rank:\*\* `\[0x7\]\[ADEPT\]`.*?'
+              r'\*\*Badges:\*\* \d+'
           )
 
           stats_line = (
@@ -86,23 +84,24 @@ jobs:
               f'**Badges:** {badges}'
           )
 
-          before_table, rest = readme.split(table_start, 1)
-          _, after_table = rest.split(table_end, 1)
-          readme = before_table + table_start + table_block + table_end + after_table
-
-          before_stats, rest = readme.split(stats_start, 1)
-          _, after_stats = rest.split(stats_end, 1)
-          readme = (
-              before_stats
-              + stats_start
-              + "\n"
-              + stats_line
-              + "\n"
-              + stats_end
-              + after_stats
+          readme, replacements = re.subn(
+              stats_pattern,
+              stats_line,
+              readme,
+              count=1,
           )
 
+          if replacements != 1:
+              raise RuntimeError(
+                  "TryHackMe profile stats line was not found in README"
+              )
+
           readme_path.write_text(readme, encoding="utf-8")
+
+          print(f"Top: {top_percentage}%")
+          print(f"Streak: {streak}")
+          print(f"Rooms: {rooms}")
+          print(f"Badges: {badges}")
 
       - name: Commit updated stats
         run: |
