@@ -59,7 +59,6 @@
 
 <div align="center">
 
-<!-- THM_TABLE_START -->
 <table>
 <tr>
 <td align="center" width="200">
@@ -106,7 +105,6 @@
 </td>
 </tr>
 </table>
-<!-- THM_TABLE_END -->
 
 </div>
 
@@ -120,9 +118,7 @@
 
 <br/>
 
-<!-- THM_STATS_START -->
 > **Rank:** `[0x7][ADEPT]`  |  **Global:** Top 5%  |  **Streak:** 🔥 137 days  |  **Rooms:** 89  |  **Badges:** 13
-<!-- THM_STATS_END -->
 
 </div>
 
