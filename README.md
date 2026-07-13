@@ -68,7 +68,7 @@
 </td>
 <td align="center" width="200">
 <img src="https://img.icons8.com/emoji/48/000000/fire.png" width="40"/><br/>
-<b style="font-size:28px; color:#4F8EF7">140</b><br/>
+<b style="font-size:28px; color:#4F8EF7">141</b><br/>
 <sub>Day Streak</sub>
 </td>
 <td align="center" width="200">
